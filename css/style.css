@@ -83,6 +83,7 @@ body
 {
     background-image: url(../img/hero.jpg);
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    height: 45rem;
 }
 
