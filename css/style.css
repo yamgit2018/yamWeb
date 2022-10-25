@@ -1,3 +1,4 @@
+/* Elementos Generales */
 :root
 {
     --blanco:#ffffff;
@@ -45,7 +46,29 @@ h1,h2,h3
     text-transform: capitalize;
 }
 
-.titulo 
+.boton
+{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    width: 90%;
+    text-align: center;
+}  
+
+
+
+/* Elementos HTML */
+
+
+/* Title */
+
+.titulo
 {
     text-transform:capitalize;
     font-weight: 700;
@@ -57,6 +80,9 @@ h1,h2,h3
     font-size: 2.2rem;
     text-transform:uppercase
 }
+
+
+/* Navegacion */
 
 .nav_fondo
 {
@@ -103,6 +129,8 @@ h1,h2,h3
     color: var(--oscuro);
 }
 
+/* Imagen Hero */
+
 
 .hero
 {
@@ -139,4 +167,14 @@ h1,h2,h3
     align-items: flex-end;
 }
 
+
+/* Boton */
+
+@media (min-width: 768px) 
+{
+    .boton
+    {
+        width:auto
+    } 
+}
 
