@@ -6,6 +6,7 @@
     --primario:#ffc107;
     --secundario:#0097a7;
     --gris:#757575;
+    --grisClaro:#dfe9f3;
 }
 
 html
@@ -18,6 +19,8 @@ body
 {
     font-size: 16px;   /* 1rem = 10px */
     font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+    /* background-color:var(--grisClaro); */
 }
 
 *, *:before, *:after 
