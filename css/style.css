@@ -197,6 +197,15 @@ h1,h2,h3
     margin-bottom: 0%;
 }
 
-
+/* Servicios */
+@media (min-width: 768px) 
+{
+    .servicios
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+      
+}
 
  
