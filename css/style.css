@@ -241,3 +241,10 @@ h1,h2,h3
 
 }
  
+/* Formulario */
+.formulario
+{
+    background-color: var(--gris);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+}
