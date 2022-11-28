@@ -17,11 +17,13 @@ html
 
 body
 {
-    font-size: 16px;   /* 1rem = 10px */
+    font-size: 16px;   
     font-family: 'Krub', sans-serif;
     background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
     /* background-color:var(--grisClaro); */
 }
+
+/* 1rem = 10px */
 
 *, *:before, *:after 
 {
@@ -34,7 +36,7 @@ body
     background-color: var(--secundario);
     color: var(--blanco);
     padding: 1rem 3rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 700;
@@ -304,10 +306,23 @@ h1,h2,h3
     border: none;
 }
 
-.contenedor-campos
+@media (min-width: 768px) 
 {
+    .contenedor-campos
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+    }
 
+    .campo:nth-child(3),  .campo:nth-child(4)
+    {
+        grid-column: 1/span 2;
+    }
 }
+
+
 
 .campo
 {
@@ -329,4 +344,15 @@ h1,h2,h3
     padding: 1.5rem;
     border-radius: 0.5rem;
 }
+.campo textarea
+{
+    height: 20rem;
+}
 
+/* Footer */
+.piepagina
+{
+    /* margin: 0 auto; */
+    text-align: center;
+    padding-top: 2rem;
+}
